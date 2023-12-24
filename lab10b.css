@@ -1,0 +1,71 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}   
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xxx-large;
+    color: white;
+    background-color: gray;
+    border : 2px solid rgb(0, 0, 0) ; 
+}
+
+body {
+    background-size: 100%;
+    background-color: white;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    text-align: center;
+
+}
+.submit_btns input {
+
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px border red;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 40px;
+    height: 0%
+}
+input:hover {
+    cursor: pointer;
+}
+input {
+    background-color: burlywood;
+    border: 2px solid black;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    display: block;
+    font-size: 15px;
+    padding: 20px;
+    margin: 0 ;
+    width: 100%;
+}
+.submit_btns {
+    display: flex;
+}
+.cgi_rb_btn {
+    margin-left: 5em;
+}
+.cgi_rb_btn input {
+    background-color: white;
+
+}
+.form-control {
+    color: black;
+}
+::placeholder{
+    color : black; 
+}
+.cgi_py_btn input {
+    background-color: whitesmoke;
+}
+
+

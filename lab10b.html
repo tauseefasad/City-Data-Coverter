@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab10-b</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lab10b.css">
+</head>
+
+
+
+<body>
+
+    <div>
+        <h1>Lab 10-b</h1>
+        <form method="POST" name="Form" class="full_form">
+            <div class="form">
+                <div class="coll">
+                    <label for="cityname" class="formm">City</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    placeholder="City name "
+                    name="cityname"
+                    required
+                    />
+                </div>
+                <br> <br> <br>
+                <div class="coll">
+                    <label for="provincestate" class="formm"
+                    >Province or State</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Province/State"
+                    name="provincestate"
+                    required
+                    />
+                </div>
+                <br> <br> <br>
+            <div class="coll">
+                <div class="coll">
+                    <label for="countryname" class="formm">Country</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Country"
+                    name="countryname"
+                    required
+                    />
+                </div>
+                <br> <br> <br>
+                <div class="coll">
+                    <label for="photourl" class="formm"
+                    >Photo URL</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Picture URL"
+                    name="photourl"
+                    required
+                    />
+                </div>
+            </div>
+            <br> <br> <br>
+            <div class="submit_btns">
+                <div class="cgi_py_btn">
+                    <label>Python result:</label>
+                    <input
+                    type="button"
+                    value="Submit"
+                    class="btn btn-success"
+                    onclick="return OnClickPython();"
+                    />
+                </div>
+                <div class="cgi_rb_btn">
+                    <label>Ruby result:</label>
+                    <input
+                    type="button"
+                    value="Submit"
+                    class="btn btn-primary "
+                    onclick="return OnClickRuby();"
+                    />
+                </div>
+                <br> <br> <br>
+                <br> <br> <br>
+                <br> <br> <br>
+                <br> <br> <br>
+            </div>
+        </form>
+    </div>
+    <script>
+        function OnClickPython()
+        {
+            document.Form.action ="https://www2.scs.ryerson.ca/~m5asad/cgi-bin/lab10p.cgi";
+            document.Form.submit();
+            return true;
+        }
+    
+        function OnClickRuby() {
+            document.Form.action ="https://www2.scs.ryerson.ca/~m5asad/cgi-bin/lab10r.cgi";
+            document.Form.submit();
+            return true;
+        }
+    </script>
+</body>
+
+</html>
